@@ -1,0 +1,91 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //method array: array join
+        var arr1 = [1,2,3,4,5,"a","b","c","d","e"];
+        console.log(arr1.join());        
+        console.log(arr1.join("."));      
+        console.log(arr1.join("|"));      
+        console.log(arr1.join("_"));
+
+        //method array: array reverse
+        var arr1 = [1,2,3,4,5,"a","b","c","d","e"];
+        console.log(arr1.toString());         
+        arr1.reverse();
+        console.log(arr1.toString());
+
+        //method array: array sort
+        var arr1 = ["zulkifli","andi","erik","joko","dina"];
+        arr1.sort();
+        console.log(arr1.toString());
+        var arr2 = [3,5,2,8,,,1,31,22,44,33,11];
+        arr2.sort();
+        console.log(arr2.toString());
+
+        //method array: array concat
+        var arr1 = [1,2,3,4,"a","b","c","d"];
+        console.log(arr1.toString());         
+  
+        var arr2=arr1.concat(11,22,33,44);
+        console.log(arr2.toString());
+
+        //method array: array slice
+        var arr1 = [1,2,3,4,"a","b","c","d"];
+        var arr2 = arr1.slice(2,4)
+        console.log(arr2.toString());         
+        
+        var arr3 = arr1.slice(4)
+        console.log(arr3.toString());         
+        
+        var arr4 = arr1.slice(-2)
+        console.log(arr4.toString());         
+        
+        var arr5 = arr1.slice(-5,-2)
+        console.log(arr5.toString());
+
+        //method array: array splice
+        var arr1 = [1,2,3,4,"a","b","c","d"];
+        console.log(arr1.toString());     
+        var arr2 = arr1.splice(4)
+        console.log(arr1.toString());     
+        console.log(arr2.toString());
+
+        //method array: array push dan array pop
+        var arr1 = [];
+        arr1.push("a","b","c");
+        console.log(arr1.toString());   
+        arr1.push("d");
+        console.log(arr1.toString());   
+        
+        arr1.pop();
+        console.log(arr1.toString());   
+        arr1.pop();
+        console.log(arr1.toString());
+
+        //method array: array unshift dan array shift
+        var arr1 = [];
+        arr1.unshift("a","b","c");
+        console.log(arr1.toString());   
+        arr1.unshift("d");
+        console.log(arr1.toString());   
+        
+        arr1.shift();
+        console.log(arr1.toString());   
+        arr1.shift();
+        console.log(arr1.toString());
+
+        //method array: array tostring dan array tolocalestring
+        var arr1 = [1,2,3,4,"a","b","c","d"];
+        console.log(arr1.toString());           
+        console.log(arr1.toLocaleString());
+    </script>
+</body>
+</html>

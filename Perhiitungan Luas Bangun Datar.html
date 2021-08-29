@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bangun_datar = prompt('silakan pilih bangun datar yang akan di hitung')
+
+        switch(bangun_datar){
+            case "Persegi panjang":
+              alert("Rumus luas persegi panjang: Panjang x Lebar")
+              var p = prompt("Masukan Panjang")
+              var l = prompt("Masukan Lebar")
+              var hasil = alert(p*L)
+              break;
+
+            case "Segitiga" :
+              alert("Rumus Segitiga: 1/2 x a x t")
+              var a = prompt("Masukan Alas")
+              var t = prompt("Masukan Tinggi")
+              var hasil = alert(1/2*a*t)
+
+            case "Persegi" :
+              alert("Rumus persegi: sisi x sisi")
+              var s1 = prompt("Masukan sisi")
+              var s2 = prompt("Masukan sisi")
+              var hasil = alert(s1*s2)
+
+            case "Belah Ketupat" :
+              alert ("Rumus Luas Belah Ketupat: 1/2 x diagonal 1 x diagonal 2")
+              var d1 = prompt("Masukan Diagonal")
+              var d2 = prompt("Masukan Diagonal")
+              var hasil = alert(1/2*d1*d2)
+
+            default:
+                alert("yang anda cari tidak ada disini")
+            break
+        }
+    </script>()
+</body>
+</html>
